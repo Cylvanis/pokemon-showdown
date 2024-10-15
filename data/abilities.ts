@@ -2,7 +2,7 @@
 
 Ratings and how they work:
 
--1: Detrimental
+-1: Detrimental hi
 	  An ability that severely harms the user.
 	ex. Defeatist, Slow Start
 
