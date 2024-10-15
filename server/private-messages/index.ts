@@ -75,7 +75,7 @@ export const PrivateMessages = new class {
 		case 'none':
 			// drivers+ can override
 			if (!Auth.atLeast(Users.globalAuth.get(from as ID), '%')) {
-				throw new Chat.ErrorMessage(`${to} has indicated that they do not wish to receive offine PMs.`);
+				throw new Chat.ErrorMessage(`${to} has indicated that they do not wish to receive offline PMs.`);
 			}
 			break;
 		default:
@@ -102,7 +102,7 @@ export const PrivateMessages = new class {
 		}
 		if (!(options.isLogin ? user.registered : user.autoconfirmed)) {
 			if (options.forceBool) return false;
-			throw new Chat.ErrorMessage("You must be autoconfirmed to use offine messaging.");
+			throw new Chat.ErrorMessage("You must be autoconfirmed to use offline messaging.");
 		}
 		if (!Users.globalAuth.atLeast(user, Config.usesqlitepms)) {
 			if (options.forceBool) return false;
@@ -125,7 +125,7 @@ export const PrivateMessages = new class {
 		for (const {message, time, sender} of messages) {
 			user.send(
 				`|pm|${this.getIdentity(sender)}|${this.getIdentity(user)}|/html ` +
-				`${Utils.escapeHTML(message)} __[sent offline, <time>${new Date(time).toISOString()}</time>]__`
+				`${Utils.escapeHTML(message)} <i>[sent offline, <time>${new Date(time).toISOString()}</time>]</i>`
 			);
 		}
 	}
@@ -230,4 +230,3 @@ if (Config.usesqlite) {
 		});
 	}
 }
-
