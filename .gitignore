@@ -71,3 +71,15 @@ local_settings.py
 pip-log.txt
 # redis dumps
 *.rdb
+editor/.local/share/code-server/heartbeat
+editor/data/User/caches/CachedConfigurations/folder/-4add0876/configuration.json
+editor/data/User/History/-356cf53c/3BjD
+editor/data/User/History/-356cf53c/entries.json
+editor/data/User/History/-356cf53c/hJJn
+editor/data/User/History/-356cf53c/yHL9
+editor/data/User/History/-719dbe4/2kNn.json
+editor/data/User/History/-719dbe4/entries.json
+editor/data/User/History/-719dbe4/REMi.json
+editor/data/User/History/-719dbe4/YCB5.json
+editor/data/logs/20241014T232332/exthost2/vscode.json-language-features/JSON Language Server.log
+editor/data/CachedProfilesData/__default__profile__/extensions.builtin.cache
